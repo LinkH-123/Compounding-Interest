@@ -1,0 +1,102 @@
+.title {
+  font-family: "National Park", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+
+  text-align: center;
+
+}
+
+body {
+    margin: 0;
+    font-family: "National Park", sans-serif;
+    font-weight: 400;
+}
+
+/* Black strip across the page */
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 24px;
+    background-color: black;
+
+    font-family: inherit;
+    font-size: 20px;
+}
+
+/* Navigation text inherits the font */
+.navigation a,
+.navigation summary {
+    font: inherit;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Remove the previous button appearance */
+.nav-button,
+.dropdown > summary {
+    display: block;
+    padding: 8px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    list-style: none;
+}
+
+.dropdown > summary::-webkit-details-marker {
+    display: none;
+}
+
+.nav-button:hover,
+.dropdown > summary:hover {
+    color: #bbb;
+}
+
+/* Dropdown positioning */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    padding: 8px;
+    background-color: black;
+    border: 1px solid #333;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 16px;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #252525;
+}
+
+.navigation a:focus-visible,
+.navigation summary:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+.introduction{
+  font-family: "National Park", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+
+  text-align: center;
+}
